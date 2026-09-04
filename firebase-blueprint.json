@@ -1,0 +1,43 @@
+{
+  "entities": {
+    "user": {
+      "title": "User",
+      "description": "User profile with status.",
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string",
+          "description": "User's email"
+        },
+        "role": {
+          "type": "string",
+          "enum": ["user", "owner"]
+        },
+        "status": {
+          "type": "string",
+          "enum": ["active", "suspended", "banned"]
+        },
+        "isVerified": {
+          "type": "boolean"
+        },
+        "balance": {
+          "type": "number",
+          "description": "User's wallet balance in NGN"
+        },
+        "createdAt": {
+          "type": "number",
+          "description": "Timestamp of creation"
+        }
+      },
+      "required": ["email", "role", "status", "isVerified", "balance", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": {
+        "$ref": "#/entities/user"
+      },
+      "description": "Store users with their access status"
+    }
+  }
+}

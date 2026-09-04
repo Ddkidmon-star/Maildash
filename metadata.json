@@ -1,0 +1,8 @@
+{
+  "name": "MailDash",
+  "description": "A modern email dashboard with quick email generator and account creation tools.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

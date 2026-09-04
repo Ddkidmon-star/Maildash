@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>447848445216 - sms-receive for FREE | NO Registration | Read SMS</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.js"></script>
+    <script src="css/clipboard.min.js"></script>
+    <script src="css/timeago.min.js"></script>
+    <script src="css/timeago.locales.min.js"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans antialiased flex flex-col min-h-screen">
+
+    
+<nav class="bg-white/95 backdrop-blur-md text-slate-800 shadow-sm border-b border-slate-200 sticky top-0 z-50 flex flex-col w-full">
+    
+        
+    <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center py-3.5">
+            
+            <a href="./" class="text-xl md:text-2xl font-bold tracking-tight flex items-center group">
+                <span class="text-slate-900 font-black">sms</span>
+                <span class="text-slate-300 mx-1.5">-</span>
+                <span class="bg-gradient-to-r from-indigo-600 to-violet-600 text-white px-2.5 py-0.5 rounded-lg shadow-md leading-none group-hover:from-indigo-500 group-hover:to-violet-500 transition-all">receive</span>
+                <span class="text-slate-500 text-xs md:text-sm font-bold ml-0.5">.net</span>
+            </a>
+
+            <div class="flex items-center gap-2.5">
+                                    <a href="login.php" class="bg-slate-900 hover:bg-black text-white px-5 py-2 md:py-2.5 rounded-full text-xs md:text-sm font-bold transition-all shadow-md hover:shadow-lg flex items-center gap-2 transform active:scale-95">
+                        <svg class="w-4 h-4 hidden sm:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"></path></svg>
+                        Login
+                    </a>
+                            </div>
+        </div>
+
+        <div class="flex items-center space-x-2 overflow-x-auto pb-3 md:pb-4 no-scrollbar border-t border-slate-100 pt-3 md:border-none md:pt-0">
+            
+            <a href="privatenumbers.php" class="shrink-0 text-[11px] md:text-xs font-bold text-slate-600 hover:text-indigo-600 hover:bg-indigo-50 px-3 py-1.5 rounded-full whitespace-nowrap uppercase tracking-wider transition-all">
+                Private numbers            </a>
+            
+            <a href="otp_panel.php" class="shrink-0 text-[11px] md:text-xs font-bold text-rose-600 hover:text-rose-700 hover:bg-rose-50 px-3 py-1.5 rounded-full whitespace-nowrap uppercase tracking-wider transition-all">
+                Instant OTP
+            </a>
+            
+            <a href="contact.php" class="shrink-0 text-[11px] md:text-xs font-bold text-slate-600 hover:text-indigo-600 hover:bg-indigo-50 px-3 py-1.5 rounded-full whitespace-nowrap uppercase tracking-wider transition-all">
+                Contact            </a>
+            
+        </div>
+    </div>
+</nav>
+
+<style>
+:root {
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    overflow-x: clip; 
+}
+
+/* Hide the scrollbar for the horizontal menu on mobile devices */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+</style>
+    <main class="flex-grow container mx-auto px-4 py-10 max-w-5xl">
+        
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mb-8">
+            <div class="p-6 text-center">
+                <div class="flex items-center justify-center gap-2 mb-2 text-gray-500 font-bold uppercase text-[10px] tracking-widest">
+                    <img src="flags/flag-uk.png" class="w-6 h-4 object-contain rounded-sm shadow-sm border border-gray-100 bg-gray-50" alt="">
+                    United Kingdom                </div>
+                
+                <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4 flex items-center justify-center gap-3">
+                    +447848445216                    <button id="btn-copy" data-clipboard-text="+447848445216" class="text-gray-300 hover:text-violet-600 transition-colors focus:outline-none" title="Copy Number">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                    </button>
+                </h1>
+                
+                <div id="copy-success" class="hidden text-violet-600 font-bold text-xs uppercase mb-4 tracking-widest animate-pulse">
+                    Copied to clipboard!
+                </div>
+
+                <div class="flex flex-wrap justify-center gap-3">
+                    <div class="bg-gray-50 px-4 py-1.5 rounded-lg border border-gray-100 text-sm shadow-sm">
+                        <span class="text-gray-500 font-semibold">Messages:</span>
+                        <b class="text-gray-900 ml-1" id="total_">96</b>
+                    </div>
+                    <div class="flex items-center gap-2 px-4 py-1.5 rounded-lg border bg-emerald-50 border-emerald-200 text-emerald-700 text-sm font-bold uppercase tracking-wide shadow-sm">
+                        <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                        online                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 border-t border-gray-100 px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="flex items-center gap-3">
+                    <button id="snd-toggle" class="bg-gray-800 hover:bg-gray-900 p-2.5 rounded-lg border border-gray-700 transition-colors shadow-sm group flex items-center justify-center focus:outline-none">
+                        <img id="snd-img" src="img/sound_on.png" class="w-5 h-5 opacity-90 group-hover:opacity-100" alt="Toggle Sound">
+                    </button>
+                    <span class="text-[10px] font-bold uppercase text-gray-500 tracking-wider">Sound Alert</span>
+                </div>
+                
+                <button onclick="window.location.reload();" class="w-full md:w-auto bg-violet-600 hover:bg-violet-700 text-white font-bold py-2.5 px-8 rounded-lg shadow-sm transition-all active:scale-95 flex items-center justify-center gap-2">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+                    Refresh Webpage                </button>
+            </div>
+        </div>
+
+        <div id="Loading" class="hidden py-16 flex flex-col items-center">
+            <div class="w-10 h-10 border-4 border-gray-200 border-t-violet-600 rounded-full animate-spin"></div>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
+            <div class="overflow-x-auto">
+                <table class="w-full text-left" id="msgs">
+                    <thead class="bg-gray-50 border-b border-gray-200">
+                        <tr>
+                            <th class="px-6 py-4 text-[10px] font-black text-gray-400 uppercase tracking-[0.1em]">From</th>
+                            <th class="px-6 py-4 text-[10px] font-black text-gray-400 uppercase tracking-[0.1em]">Message</th>
+                            <th class="px-6 py-4 text-[10px] font-black text-gray-400 uppercase tracking-[0.1em] text-right">Added</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-100">
+                        </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <div id="old_count" class="hidden">0</div>
+
+    <script>
+    // Save the dynamic path generated by PHP into a JS constant
+    const BASE_URL = "/";
+
+    // Audio Notification Configuration
+    let wav = true;
+    let audio = new Audio(BASE_URL + 'notification.mp3');
+
+    // Toggle sound button logic
+    $("#snd-toggle").on('click', function() {
+        wav = !wav;
+        // Update the speaker icon based on state
+        $("#snd-img").attr("src", wav ? BASE_URL + "img/sound_on.png" : BASE_URL + "img/sound_off.png");
+        // Change button color to provide visual feedback
+        if(wav) {
+            $(this).removeClass('bg-red-600 border-red-700 hover:bg-red-700').addClass('bg-gray-800 border-gray-700 hover:bg-gray-900');
+        } else {
+            $(this).removeClass('bg-gray-800 border-gray-700 hover:bg-gray-900').addClass('bg-red-600 border-red-700 hover:bg-red-700');
+        }
+    });
+
+    // Live Polling Function - Fetches new SMS without reloading the page
+    function check() {
+        let n = Math.round(new Date().getTime() / 1000);
+        $.ajax({
+            url: BASE_URL + "get_sms_register.php?phone=447848445216",
+            headers: { 'X-Alt-Data': n },
+            timeout: 8000, // Optional timeout to prevent hanging requests
+            success: function(data) {
+                try {
+                    // Safely parse JSON to prevent crashes
+                    let json = (typeof data === 'object') ? data : $.parseJSON(data);
+                    
+                    let old_count = parseInt($('#old_count').text()) || 0;
+                    let total_old = parseInt($('#total_').text()) || 0;
+                    let new_found = false;
+
+                    // Loop through the fetched messages backwards to append in chronological order
+                    for (let i = json.length - 1; i >= 0; --i) {
+                        if (parseInt(json[i].mesaje_id) > old_count) {
+                            let res = json[i].data.split(" ");
+                            let dt = res[0] + "T" + res[1] + "Z"; // Format for timeago.js
+                            
+                            // Append the new message to the top of the table
+                            $("#msgs tbody").prepend(
+                                `<tr class="bg-violet-50/60 transition-colors duration-1000">
+                                    <td class="px-6 py-4 text-sm font-bold text-gray-900">${json[i].telefon}</td>
+                                    <td class="px-6 py-4 text-sm text-gray-600 leading-relaxed font-medium">${json[i].mesaj}</td>
+                                    <td class="px-6 py-4 text-xs font-bold text-gray-400 whitespace-nowrap text-right"><span id="dtt" datetime="${dt}">${dt}</span></td>
+                                </tr>`
+                            );
+                            $("#old_count").text(json[i].mesaje_id);
+                            new_found = true;
+                        }
+                    }
+                    
+                    // If a new message arrived, update count and play sound
+                    if (new_found) {
+                        $("#total_").text(total_old + 1);
+                        if (wav) {
+                            audio.play().catch(e => console.log("Audio auto-play blocked by browser:", e));
+                        }
+                        // Refresh timeago formatting
+                        if (typeof timeago === 'function') {
+                            timeago().render(document.querySelectorAll('#dtt'));
+                        }
+                    }
+                } catch (error) {
+                    console.error("JSON Parsing or DOM Error:", error);
+                }
+            },
+            error: function(xhr, status, error) {
+                console.error("Polling AJAX Error (get_sms_register.php):", status, error);
+            }
+        });
+    }
+
+    $(document).ready(function() {
+        // Start the polling loop immediately: exactly every 10 seconds (10000 ms)
+        // This runs independently of the initial table load.
+        setInterval(check, 10000);
+
+        // Initial secure load generating the table rows
+        let n = Math.round(new Date().getTime() / 1000);
+        let nn = 'MFRUMHM1SGRoSSwxNzg3ODYwMjg5LDAyZjAzMDgxY2U2Y2ZjODFjNjA4NTk5MjhmNDlhYzMxMTM3YzkyOTl8NDQ3ODQ4NDQ1MjE2';
+        
+        $.ajax({
+            url: BASE_URL + "script_register.php?key=" + encodeURIComponent(nn) + "&phone=447848445216&alt_x=" + n,
+            beforeSend: function() { 
+                $("#Loading").show(); 
+            },
+            success: function(html) {
+                $("#Loading").hide();
+                $("#msgs tbody").html(html);
+                if (typeof timeago === 'function') {
+                    timeago().render(document.querySelectorAll('#dtt'));
+                }
+                
+                // Extract the ID of the last message to prepare the polling logic
+                let lastId = $("#msgs tbody").find('#old_count').first().text();
+                if(lastId) {
+                    $("#old_count").text(lastId); // Store it in the hidden div
+                }
+            },
+            error: function(xhr, status, error) {
+                $("#Loading").hide();
+                console.error("Initial Load AJAX Error (script_register.php):", status, error);
+            }
+        });
+
+        // Initialize Clipboard functionality
+        var clipboard = new ClipboardJS('#btn-copy');
+        clipboard.on('success', function() {
+            $("#copy-success").removeClass('hidden');
+            setTimeout(() => { $("#copy-success").addClass('hidden'); }, 2000);
+        });
+    });
+    </script>
+
+    <footer class="bg-white border-t border-gray-200 mt-12 py-8">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center justify-center text-sm text-gray-600 space-y-4 md:space-y-0 md:space-x-6">
+            <a href="./" class="hover:text-blue-600 font-medium transition">sms-receive.net</a>
+            <span class="hidden md:inline text-gray-300">|</span>
+            <a href="terms.php" class="hover:text-blue-600 transition">Terms of services</a>
+            <span class="hidden md:inline text-gray-300">|</span>
+            <a href="privacy.php" class="hover:text-blue-600 transition">Privacy Policy &amp; Cookies</a>
+            <span class="hidden md:inline text-gray-300">|</span>
+            <a href="legal.php" class="hover:text-blue-600 transition">Legal Information</a>
+            <span class="hidden md:inline text-gray-300">|</span>
+            <a href="law-enforcement.php" class="hover:text-blue-600 transition">Law Enforcement</a>
+            <span class="hidden md:inline text-gray-300">|</span>
+            <span>Copyright &copy; 2026</span>
+        </div>
+    </div>
+</footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58792937-1', 'auto');
+  ga('send', 'pageview');
+
+</script>     </body>
+</html>
